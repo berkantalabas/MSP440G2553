@@ -72,7 +72,7 @@ void delay(void);                           // Software delay
 
 int main (void)
 {
-  WDTCTL = WDTPW + WDTHOLD;                 // Stop Watch dog timer
+  WDTCTL = WDTPW + WDTHOLD;                 // Stop Watch dog timer // non
   CACTL2 = P2CA4;                           // CA1/P1.1 = +comp
   CCTL0 = CCIE;                             // CCR0 interrupt enabled
   TACTL = TASSEL_2 + ID_3 + MC_2;           // SMCLK/8, cont-mode
